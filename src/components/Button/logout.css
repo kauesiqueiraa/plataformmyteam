@@ -1,0 +1,28 @@
+.button {
+  width: 100%;
+  height: 48px;
+  border-radius: 10px;
+
+  border: none;
+  outline: none;
+
+  color: var(--color-text-button);
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  background-color: var(--color-highlight);
+
+  transition: all .4s ease-in-out;
+}
+
+.button.text {
+  background-color: transparent;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button.text:hover {
+  background-color: var(--color-highlight-hover);
+}
