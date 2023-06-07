@@ -1,0 +1,161 @@
+.login-area {
+    display: flex;
+
+    width: 100%;
+    height: 100vh;
+
+    /* background-image: url(../../../public/assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+
+}
+
+.login-area>.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    flex: 1;
+    background-color: transparent;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 64px;
+}
+
+.login-area>.banner>img {
+    width: 50%;
+    height: auto;
+    margin-top: 10%;
+}
+
+.login-area>.banner>.information {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-area>.banner .title {
+    color: var(--color-text-normal);
+    font-size: 32px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.login-area>.banner p {
+    text-align: center;
+    color: var(--color-text-normal);
+    margin-top: 8px;
+}
+
+.login-area>.form-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+}
+
+.login-area>.form-area>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    width: 60%;
+    height: 80%;
+
+    padding: 16px;
+}
+
+.login-area>.form-area>form>h1 {
+    font-size: 38px;
+    color: var(--color-highlight);
+    margin-bottom: 16px;
+    text-shadow: 10%;
+    text-align: center;
+}
+
+.login-area>.form-area>form>h1>span {
+    color: var(--color-text-light);
+}
+
+.login-area>.form-area>form>label {
+    color: var(--color-text-light);
+    font-size: 26px;
+}
+
+.login-area>.form-area>form>.signin>p {
+    color: var(--color-highlight);
+}
+
+.login-area>.form-area>form>.signin>a {
+    color: var(--color-highlight);
+    text-decoration: none;
+}
+
+
+.login-area>.form-area>form>.signin {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: var(--color-text-disabled);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.login-area>.form-area>form>.signin:hover {
+    opacity: 0.6;
+    background-color: var(--color-text-light);
+}
+
+.login-area>.form-area>form>button {
+    margin-top: 16px;
+}
+
+.login-area>.form-area>form>.input {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.login-area>.form-area>form>.input-btn {
+    width: 20%;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .login-area>.banner {
+        display: none;
+    }
+
+    .login-area>.form-area>form {
+        width: 80%;
+    }
+
+    .login-area>.form-area>form>h1 {
+        font-size: 24px;
+    }
+
+    .login-area>.form-area>form>label {
+        font-size: 16px;
+    }
+
+    .login-area>.form-area>form>.input {
+        width: 100%;
+    }
+
+    .login-area>.form-area>form>.input-btn {
+        width: 50%;
+
+    }
+
+    .login-area>.form-area>form>.signin {
+        font-size: 14px;
+    }
+}
